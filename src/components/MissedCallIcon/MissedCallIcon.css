@@ -1,0 +1,7 @@
+.missed-call-icon-bg {
+  background: #e14c2c;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

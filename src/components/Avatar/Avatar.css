@@ -1,0 +1,9 @@
+.avatar-container {
+  padding: 0 8px;
+  display: flex;
+}
+
+.avatar-icon-bg {
+  background: #c3c0bb;
+  border-radius: 50%;
+}

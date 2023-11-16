@@ -1,0 +1,52 @@
+.audio-message-container {
+  background: #ffffff;
+  display: flex;
+  align-items: flex-end;
+  margin: 4px;
+  max-width: 460px;
+}
+
+.audio-message-body {
+  background: #f3f3f5;
+  border-radius: 16px;
+  flex: 1;
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+}
+
+.missed-call {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.audio-transcription {
+}
+
+.player-container {
+  padding: 8px 0;
+}
+
+.icon-col {
+  padding-right: 4px;
+}
+
+.call-title {
+  font-weight: bold;
+}
+
+.call-subtitle {
+  font-size: 14px;
+  color: #727476;
+}
+
+.audio-text {
+  color: #4b4b4d;
+  padding-top: 2px;
+}
+
+.label-text {
+  color: #979799;
+  font-size: 12px;
+}

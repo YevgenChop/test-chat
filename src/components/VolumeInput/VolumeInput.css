@@ -1,0 +1,42 @@
+.volume-input-container {
+  display: flex;
+  justify-items: center;
+  align-items: center;
+}
+
+.volume-input::-webkit-slider-runnable-track {
+  background: #663af5;
+  height: 0.25rem;
+  border-radius: 0.5rem;
+}
+
+.volume-input::-moz-range-track {
+  background: #663af5;
+  height: 0.25rem;
+  border-radius: 0.5rem;
+}
+
+.volume-input {
+  -webkit-appearance: none;
+}
+
+.volume-input::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  border: none;
+  height: 12px;
+  width: 12px;
+  border-radius: 50%;
+  background: #ffffff;
+  margin-top: -4px;
+  box-shadow: 0 0 5px rgb(0 0 0 / 0.2);
+}
+
+.volume-input::-moz-range-thumb {
+  border: none;
+  height: 12px;
+  width: 12px;
+  border-radius: 50%;
+  background: #ffffff;
+  box-shadow: 0 0 5px rgb(0 0 0 / 0.2);
+}

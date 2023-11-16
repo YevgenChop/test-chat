@@ -1,0 +1,42 @@
+.progress-bar {
+  display: flex;
+  justify-items: center;
+  align-items: center;
+}
+
+.input-range::-webkit-slider-runnable-track {
+  background: #c3c5c7;
+  height: 0.25rem;
+  border-radius: 0.5rem;
+}
+
+.input-range::-moz-range-track {
+  background: #c3c5c7;
+  height: 0.25rem;
+  border-radius: 0.5rem;
+}
+
+.input-range {
+  -webkit-appearance: none;
+}
+
+.input-range::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  border: none;
+  height: 12px;
+  width: 12px;
+  border-radius: 50%;
+  background: #ffffff;
+  margin-top: -4px;
+  box-shadow: 0 0 5px rgb(0 0 0 / 0.2);
+}
+
+.input-range::-moz-range-thumb {
+  border: none;
+  height: 12px;
+  width: 12px;
+  border-radius: 50%;
+  background: #ffffff;
+  box-shadow: 0 0 5px rgb(0 0 0 / 0.2);
+}
