@@ -15,9 +15,6 @@ type ReplyBlockProps = {
 export const ReplyBlock = ({ replies }: ReplyBlockProps) => {
   const firstReply = replies[0];
 
-  const getReplyMessages = () =>
-    replies.map((reply: Reply) => <ReplyMessage data={reply} />);
-
   const replyCommentsLabel = `${replies.length} comment${
     replies.length > 1 ? 's' : ''
   }`;
@@ -47,7 +44,9 @@ export const ReplyBlock = ({ replies }: ReplyBlockProps) => {
             </IconButton>
           </div>
         </div>
-        {getReplyMessages()}
+        {replies.map((reply: Reply) => (
+          <ReplyMessage key={reply.id} data={reply} />
+        ))}
         <div className="reply-input-container">
           <input className="reply-input" type="text" />
           <div className="reply-input-buttons">

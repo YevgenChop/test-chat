@@ -8,12 +8,14 @@ export type Audio = {
 };
 
 export type Reply = {
+  id: string;
   text: string;
   emotions?: [];
   user: User;
 };
 
 export type Message = {
+  id: string;
   audio?: Audio;
   replies?: Reply[];
   user: User;
