@@ -46,10 +46,10 @@ export const Chat = () => {
     }
 
     return (
-      <div className="chat-message-container">
+      <>
         {message}
         {replyBlock}
-      </div>
+      </>
     );
   };
 

@@ -8,8 +8,6 @@ type AvatarProps = {
 
 export const Avatar = ({ size, style }: AvatarProps) => (
   <div className="avatar-container" style={style || {}}>
-    {/* <div className="avatar-icon-bg" style={{ height: size, width: size }}> */}
     <AvatarIcon width={size} height={size} />
-    {/* </div> */}
   </div>
 );
