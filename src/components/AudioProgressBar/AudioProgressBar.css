@@ -4,6 +4,10 @@
   align-items: center;
 }
 
+.input-range {
+  width: 100%;
+}
+
 .input-range::-webkit-slider-runnable-track {
   background: #c3c5c7;
   height: 0.25rem;

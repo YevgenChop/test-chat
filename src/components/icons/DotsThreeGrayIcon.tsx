@@ -1,11 +1,11 @@
 import { SVGProps } from 'react';
 
-export const DotsThree = (props: SVGProps<SVGSVGElement>) => (
+export const DotsThreeGrayIcon = (props: SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     width={20}
     height={20}
-    fill="#727476"
+    fill="#c1c4c6"
     viewBox="0 0 256 256"
     {...props}
   >

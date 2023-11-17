@@ -4,6 +4,10 @@
   align-items: center;
 }
 
+.volume-input {
+  max-width: 50px;
+}
+
 .volume-input::-webkit-slider-runnable-track {
   background: #663af5;
   height: 0.25rem;

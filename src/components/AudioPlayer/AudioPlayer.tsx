@@ -1,5 +1,4 @@
 import { useRef, useState } from 'react';
-import './AudioPlayer.css';
 import { IconButton } from '../IconButton';
 import { PauseIcon } from '../icons/PauseIcon';
 import { PlayIcon } from '../icons/PlayIcon';
@@ -9,7 +8,8 @@ import { VolumeInput } from '../VolumeInput';
 import { VolumeUpIcon } from '../icons/VolumeUpIcon';
 import { VolumeOffIcon } from '../icons/VolumeOffIcon';
 import { formatDurationDisplay } from '../../helpers/playerHelper';
-import { DotsThree } from '../icons/DotsThree';
+import { DotsThreeDarkIcon } from '../icons/DotsThreeDarkIcon';
+import './AudioPlayer.css';
 
 interface AudioPlayerProps {
   src: string;
@@ -97,7 +97,7 @@ export const AudioPlayer = ({ src }: AudioPlayerProps) => {
         <source type="audio/mpeg" src={src} />
       </audio>
       <div className="controls">
-        <div>
+        <div className="control-item">
           <IconButton onClick={togglePlayPause}>
             {isReady ? (
               playerControlIcon
@@ -106,7 +106,7 @@ export const AudioPlayer = ({ src }: AudioPlayerProps) => {
             )}
           </IconButton>
         </div>
-        <div>
+        <div className="control-item">
           <AudioProgressBar
             duration={duration}
             currentProgress={currentProgress}
@@ -118,18 +118,18 @@ export const AudioPlayer = ({ src }: AudioPlayerProps) => {
             }}
           />
         </div>
-        <div className="audio-duration">
+        <div className="audio-duration control-item">
           {currentProgress === 0 ? durationDisplay : elapsedDisplay}
         </div>
-        <div className="volume-control">
+        <div className="volume-control control-item">
           <IconButton onClick={handleMuteUnmute}>
             {volume === 0 ? <VolumeOffIcon /> : <VolumeUpIcon />}
           </IconButton>
           <VolumeInput volume={volume} onVolumeChange={handleVolumeChange} />
         </div>
-        <div>
+        <div className="control-item">
           <IconButton onClick={() => {}}>
-            <DotsThree />
+            <DotsThreeDarkIcon />
           </IconButton>
         </div>
       </div>

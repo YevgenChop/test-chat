@@ -1,13 +1,21 @@
+import { Audio, User } from '../../types';
 import { AudioPlayer } from '../AudioPlayer';
-import { Avatar } from '../Avatar';
 import { MissedCallIcon } from '../MissedCallIcon';
 import './AudioMessage.css';
 
-export const AudioMessage = () => {
+type AudioMessageProps = {
+  audio: Audio;
+  user: User;
+};
+
+export const AudioMessage = ({ audio, user }: AudioMessageProps) => {
+  const { src, transcript } = audio;
+  const { avatar } = user;
+
   return (
     <div className="audio-message-container">
-      <div>
-        <Avatar size={40} />
+      <div className="audio-message-avatar">
+        <img className="audio-message-avatar-img" src={avatar} alt="" />
       </div>
       <div className="audio-message-body">
         <div className="missed-call">
@@ -20,14 +28,11 @@ export const AudioMessage = () => {
           </div>
         </div>
         <div className="player-container">
-          <AudioPlayer src="file_example_MP3_2MG.mp3" />
+          <AudioPlayer src={src} />
         </div>
         <div className="audio-transcription">
           <div className="label-text">Transcript</div>
-          <div className="audio-text">
-            Hi there. Just checking in to see when the proposal will be ready.
-            Please call me back when you have a chance. Thanks.
-          </div>
+          <div className="audio-text">{transcript}</div>
         </div>
       </div>
     </div>

@@ -6,6 +6,14 @@
   max-width: 460px;
 }
 
+.audio-message-avatar {
+  padding: 0 8px;
+}
+
+.audio-message-avatar-img {
+  width: 40px;
+}
+
 .audio-message-body {
   background: #f3f3f5;
   border-radius: 16px;
@@ -21,15 +29,12 @@
   justify-content: flex-start;
 }
 
-.audio-transcription {
-}
-
 .player-container {
   padding: 8px 0;
 }
 
 .icon-col {
-  padding-right: 4px;
+  padding-right: 8px;
 }
 
 .call-title {
@@ -44,9 +49,4 @@
 .audio-text {
   color: #4b4b4d;
   padding-top: 2px;
-}
-
-.label-text {
-  color: #979799;
-  font-size: 12px;
 }

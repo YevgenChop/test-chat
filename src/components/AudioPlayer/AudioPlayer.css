@@ -11,9 +11,14 @@
   flex: 1;
   height: 100%;
   display: grid;
-  grid-template-columns: 1fr 3fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 5fr 1fr 2fr 1fr;
+  column-gap: 6px;
   justify-items: center;
   align-items: center;
+}
+
+.control-item {
+  width: 100%;
 }
 
 .spin-icon {
@@ -33,7 +38,7 @@
 }
 
 .audio-duration {
-  font-size: 12px;
+  font-size: 13px;
   color: #727476;
 }
 
